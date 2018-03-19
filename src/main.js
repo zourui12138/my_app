@@ -4,6 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+//引入element-ui
+import ElementUI from 'element-ui'
+//import 'element-ui/lib/theme-chalk/index.css'
+import './element-variables.scss'
+Vue.use(ElementUI);
+
 Vue.config.productionTip = false;
 
 import 'lib-flexible/flexible'

@@ -1,9 +1,5 @@
 <template>
-    <div id="app">
-        <img src="./assets/logo.png">
-        <div class="box"></div>
-        <router-view/>
-    </div>
+    <div id="app"><router-view/></div>
 </template>
 
 <script>
@@ -12,19 +8,19 @@
     }
 </script>
 
-<style>
-    #app {
+<style lang="scss">
+    html {
+        height: calc(100%);
+    }
+    body {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        text-align: center;
-        color: #2c3e50;
-        margin-top: 60px;
+        margin: 0;
+        padding: 0;
+        height: calc(100%);
     }
-    .box{
-        width: 300px;
-        height: 400px;
-        background-color: #e4393c;
-        margin: auto;
+    #app{
+        height: calc(100%);
     }
 </style>
